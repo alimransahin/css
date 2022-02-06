@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bat{
+            transition: transform .2s ease-in;
+        }
+        .feld:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: 100% 0;
+        }
+        .feld:hover .ball{
+            transform: translate(900px, -400px);
+            background-color: red;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            background-color:#810202;
+            border-radius: 50%;
+            position: relative;
+            left: 770px;
+            transition: .2s ease-in-out .2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="feld">
+            <img class="bat" src="images/DREAM_04-600x600_1024x1024.jpg">
+            <div class="ball"></div>
+    </div>
+</body>
+</html>

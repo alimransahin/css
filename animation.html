@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @keyframes sun{
+            0%{
+                left: 0;
+                bottom: 0;
+            }
+            25%{
+                left:15%;
+                bottom: 45%;
+            }
+            50%{
+                left:48%;
+                bottom: 85%;
+                background-color:yellow;
+            }
+            75%{
+                left:80%;
+                bottom: 45%;
+            }
+            100%{
+                left:95%;
+                bottom:0;  ;
+
+            }
+        }
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .sky{
+            background-color:skyblue;
+            height: 800px;
+            position: relative;
+            width: 100%;
+        }
+        .sun{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(255, 19, 19);
+            border-radius: 50%;
+            position: absolute;
+        }
+        .sky:hover .sun{
+            animation: sun 10s ease-in-out .5s infinite alternate ;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="sky">
+        <div class="sun"></div>
+    </div>
+</body>
+</html>
